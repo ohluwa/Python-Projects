@@ -1,4 +1,5 @@
 import random
+from time import sleep
 
 #Function To Initiate Game
 def guesser(num):
@@ -31,6 +32,7 @@ def restart(response):
         if (response == "n"):
             i +=1
             print("Thanks for playing.")
+            sleep(5)
             exit()
         else:
             print("ERROR: Please enter Y or N.")
@@ -51,11 +53,11 @@ def handle_execption():
 #Main Loop
 i = 0
 while (i < 1):
-    randnum = random.randint(1,101)
+    randnum = random.randint(1,100)
     #Can Be Uncommented To See Random Generated Number
     #print(randnum)
     guessednums = []
     print("Please guess a number between 1 and 100.: ")
     handle_execption()
-    print("Would you like to play again? Y/N")
+    print("Would you like to play again? (Y/N)")
     restart(str(input().lower()))
