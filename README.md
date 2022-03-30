@@ -1,3 +1,4 @@
 # Python-Projects
 
-Adding simple game project.
+Added number guessing game project.
+  -modified to catch unexpected values
