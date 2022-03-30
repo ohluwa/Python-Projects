@@ -32,7 +32,7 @@ def restart(response):
         if (response == "n"):
             i +=1
             print("Thanks for playing.")
-            sleep(5)
+            sleep(1)
             exit()
         else:
             print("ERROR: Please enter Y or N.")
@@ -48,6 +48,7 @@ def handle_execption():
         except ValueError:
             print("That is not a valid input. Try again.")
             handle_execption()
+            break
     return False
 
 #Main Loop
